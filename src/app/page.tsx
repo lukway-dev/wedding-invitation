@@ -169,6 +169,7 @@ const HomePage = () => {
 
 const Letters = () => (
   <svg
+    className='HomePage__Card-Letters'
     width={347}
     height={156}
     viewBox="0 0 347 156"
