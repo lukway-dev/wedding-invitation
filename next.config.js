@@ -28,6 +28,7 @@ const nextConfig = {
   //     }
   //   ]
   // }
+  basePath: '/wedding-invitation',
   output: 'export',  // <=== enables static exports
 }
 
