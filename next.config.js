@@ -28,7 +28,7 @@ const nextConfig = {
   //     }
   //   ]
   // }
-  output: "export",  // <=== enables static exports
+  output: 'export',  // <=== enables static exports
 }
 
 module.exports = nextConfig
