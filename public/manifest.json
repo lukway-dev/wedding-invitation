@@ -1,84 +1,88 @@
 {
-  "name": "Linkchar Next Template",
-  "short_name": "Linkchar Next Template",
-  "description": "Linkchar Next Template - Created by Lucas Ojeda De Sousa (Lukway)",
+  "name": "Boda de Lucas y Flor",
+  "short_name": "Boda de Lucas y Flor",
+  "description": "Boda de Lucas y Flor - Created by Lucas Ojeda De Sousa (Lukway)",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "type": "image/x-ico"
-    },
-    {
-      "src": "/favicon16.ico",
+      "src": "/16.png",
       "sizes": "16x16",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon32.ico",
+      "src": "/32.png",
       "sizes": "32x32",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon36.ico",
+      "src": "/36.png",
       "sizes": "36x36",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon48.ico",
+      "src": "/48.png",
       "sizes": "48x48",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon57.ico",
+      "src": "/57.png",
       "sizes": "57x57",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon60.ico",
+      "src": "/60.png",
       "sizes": "60x60",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon72.ico",
+      "src": "/72.png",
       "sizes": "72x72",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon76.ico",
+      "src": "/76.png",
       "sizes": "76x76",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon96.ico",
+      "src": "/96.png",
       "sizes": "96x96",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon114.ico",
+      "src": "/114.png",
       "sizes": "114x114",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon120.ico",
+      "src": "/120.png",
       "sizes": "120x120",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon128.ico",
-      "sizes": "128x128",
-      "type": "image/x-ico"
-    }, {
-      "src": "/favicon144.ico",
+      "src": "/144.png",
       "sizes": "144x144",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon152.ico",
+      "src": "/150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    }, {
+      "src": "/152.png",
       "sizes": "152x152",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon180.ico",
+      "src": "/180.png",
       "sizes": "180x180",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon192.ico",
+      "src": "/192.png",
       "sizes": "192x192",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon256.ico",
+      "src": "/256.png",
       "sizes": "256x256",
-      "type": "image/x-ico"
+      "type": "image/png"
     }, {
-      "src": "/favicon512.ico",
+      "src": "/310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    }, {
+      "src": "/348.png",
+      "sizes": "348x348",
+      "type": "image/png"
+    }, {
+      "src": "/512.png",
       "sizes": "512x512",
-      "type": "image/x-ico",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],
