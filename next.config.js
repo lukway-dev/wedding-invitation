@@ -29,7 +29,8 @@ const nextConfig = {
   //   ]
   // }
   basePath: '/wedding-invitation',
-  output: 'export',  // <=== enables static exports
+  output: 'export',
+  images: { unoptimized: true }
 }
 
 module.exports = nextConfig

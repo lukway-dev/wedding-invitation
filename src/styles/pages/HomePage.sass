@@ -87,3 +87,19 @@
     &:hover
       background: lighten(#0e0e0e, 10%)
 
+@media (max-width: 824px)
+  .HomePage
+    justify-content: flex-start
+    &__Card
+      width: 100%
+      height: calc(100vh - 32px - 44px - 16px)
+      aspect-ratio: unset
+      &-Front, &-Back
+        flex-direction: column
+        svg
+          max-width: 100%
+      &-Back
+        justify-content: space-evenly
+    &__Divisor
+      height: 4px
+      width: 80%

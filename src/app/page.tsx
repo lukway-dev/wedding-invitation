@@ -26,7 +26,7 @@ const HomePage = () => {
       setDisabled(true)
       if(isFlip) {
         const timeline = gsap.timeline()
-  
+
         timeline.to('.HomePage__Card-Content', {
           duration: 0.1,
           scale: 0.95,
@@ -96,70 +96,68 @@ const HomePage = () => {
 
   return (
     <main className="HomePage">
-      <div className="flex flex-col items-center gap-6">
-        <div className="HomePage__Card">
-          <div
-            className={classNames(
-              'HomePage__Card-Content',
-            )}
-          >
-            <div className="HomePage__Card-Front">
-              <div className="w-full h-full flex flex-col justify-between items-center">
-                <Letters/>
-                <Calendar/>
-              </div>
-              <div className="HomePage__Divisor"></div>
-              <div className="w-full h-full flex flex-col justify-around items-center">
-                <Title/>
-                <Schedule/>
+      <div className="HomePage__Card">
+        <div
+          className={classNames(
+            'HomePage__Card-Content',
+          )}
+        >
+          <div className="HomePage__Card-Front">
+            <div className="w-full h-full flex flex-col justify-between items-center">
+              <Letters/>
+              <Calendar/>
+            </div>
+            <div className="HomePage__Divisor"></div>
+            <div className="w-full h-full flex flex-col justify-around items-center">
+              <Title/>
+              <Schedule/>
+            </div>
+          </div>
+
+          <div className="HomePage__Card-Back">
+            <BackTextOne/>
+
+            <div className="flex flex-col items-center gap-2">
+              <BackTextTwo/>
+
+              <div className="flex items-center gap-2">
+                <div className="w-[36px] h-[36px]"></div>
+                <span className="text-white text-[18px]">{ CVU }</span>
+                <button
+                  className='HomePage__Copy'
+                  onClick={handleCopyOnCliboard}
+                >
+                  <i className='pi pi-copy'/>
+                </button>
               </div>
             </div>
 
-            <div className="HomePage__Card-Back">
-              <BackTextOne/>
-
-              <div className="flex flex-col items-center gap-2">
-                <BackTextTwo/>
-
-                <div className="flex items-center gap-2">
-                  <div className="w-[36px] h-[36px]"></div>
-                  <span className="text-white text-[18px]">{ CVU }</span>
-                  <button
-                    className='HomePage__Copy'
-                    onClick={handleCopyOnCliboard}
-                  >
-                    <i className='pi pi-copy'/>
-                  </button>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center gap-2">
-                <BackTextThree/>
-                <Link
-                  className='HomePage__Button'
-                  href='https://drive.google.com/drive/folders/1B1JzubUXvrvij9k2s9umwKOymm6vqKEN?usp=sharing'
-                  target='_blank'
-                >
-                  <i className='pi pi-images'/>
-                </Link>
-              </div>
+            <div className="flex flex-col items-center gap-2">
+              <BackTextThree/>
+              <Link
+                className='HomePage__Button'
+                href='https://drive.google.com/drive/folders/1B1JzubUXvrvij9k2s9umwKOymm6vqKEN?usp=sharing'
+                target='_blank'
+              >
+                <i className='pi pi-images'/>
+              </Link>
             </div>
           </div>
         </div>
-
-        <button
-          className='HomePage__Flip-Button'
-          onClick={() => setIsFlip(!isFlip)}
-          disabled={disabled}
-        >
-          <i
-            className={classNames(
-              'pi pi-replay HomePage__Icon',
-              { 'HomePage__Icon-Rotate': isFlip },
-            )}
-          ></i>
-        </button>
       </div>
+
+      <button
+        className='HomePage__Flip-Button'
+        onClick={() => setIsFlip(!isFlip)}
+        disabled={disabled}
+      >
+        <i
+          className={classNames(
+            'pi pi-replay HomePage__Icon',
+            { 'HomePage__Icon-Rotate': isFlip },
+          )}
+        ></i>
+      </button>
 
       <Toast
         ref={toast}
