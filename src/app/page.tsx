@@ -103,22 +103,47 @@ const HomePage = () => {
           )}
         >
           <div className="HomePage__Card-Front">
-            <div className="w-full h-full flex flex-col justify-between items-center">
+            <div className="HomePage__Principal-Container w-full h-full flex flex-col justify-between items-center">
               <Letters/>
               <Calendar/>
             </div>
             <div className="HomePage__Divisor"></div>
             <div className="w-full h-full flex flex-col justify-around items-center">
-              <Title/>
+              {/* <Title/> */}
+              <span className='text-center text-[24px]'>
+                Nos encantaría celebrar este día tan especial junto a vos
+              </span>
               <Schedule/>
             </div>
           </div>
 
           <div className="HomePage__Card-Back">
-            <BackTextOne/>
+            <span className='HomePage__Texts text-center'>
+              Sabemos que tu tiempo es valioso, por lo que
+              entendemos que no asistas a la ceremonia civil
+              ¡Esperamos verte en la cena!
+            </span>
+
+            <div className="HomePage__Horizontal-Divisor"></div>
 
             <div className="flex flex-col items-center gap-2">
-              <BackTextTwo/>
+              <div className="HomePage__Texts flex flex-col text-center">
+                <span>
+                  En cuanto a los regalos, nos sentimos afortunados de tener todo lo que necesitamos
+                </span>
+
+                <span>
+                  Tu presencia en nuestra boda es el mejor regalo que podríamos recibir
+                </span>
+
+                <span>
+                  Sin embargo, entendemos el deseo de hacernos un obsequio
+                </span>
+
+                <span>
+                  Entonces, para el que lo necesite, les facilitamos nuestro CBU:
+                </span>
+              </div>
 
               <div className="flex items-center gap-2">
                 <div className="w-[36px] h-[36px]"></div>
@@ -132,8 +157,23 @@ const HomePage = () => {
               </div>
             </div>
 
+            <div className="HomePage__Horizontal-Divisor"></div>
+
             <div className="flex flex-col items-center gap-2">
-              <BackTextThree/>
+              <div className="HomePage__Texts flex flex-col text-center">
+                <span>
+                  Finalmente, queremos atesorar cada instante de nuestra boda
+                </span>
+
+                <span>
+                  Por eso les dejamos este link para que compartan sus fotos del evento con nosotros
+                </span>
+
+                <span>
+                  ¡Agradecemos mucho su ayuda!
+                </span>
+              </div>
+
               <Link
                 className='HomePage__Button'
                 href='https://drive.google.com/drive/folders/1B1JzubUXvrvij9k2s9umwKOymm6vqKEN?usp=sharing'
@@ -258,6 +298,7 @@ const Letters = () => (
 
 const Calendar = () => (
   <svg
+    className='HomePage__Card-Calendar'
     width={350}
     height={230}
     viewBox="0 0 350 230"
