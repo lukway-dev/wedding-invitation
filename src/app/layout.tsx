@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { PrimeReactProvider } from 'primereact/api'
+import { Cagliostro } from 'next/font/google'
 
 import 'primeicons/primeicons.css'
 import 'primereact/resources/primereact.min.css'
@@ -153,10 +154,16 @@ export const metadata: Metadata = {
 interface Props {
   children: React.ReactNode
 }
+
+const cagliostro = Cagliostro({
+  subsets: ['latin'],
+  weight: '400'
+})
+
 export default function Layout({ children }: Props) {
   return (
     <html lang="en">
-      <body>
+      <body className={cagliostro.className}>
         <PrimeReactProvider>
           { children }
         </PrimeReactProvider>
