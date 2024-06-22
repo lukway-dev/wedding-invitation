@@ -1,5 +1,5 @@
 'use client'
-import { memo, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Toast } from 'primereact/toast'
@@ -9,7 +9,6 @@ import CivilImage from '@/assets/images/civil.png'
 import DinnerImage from '@/assets/images/dinner.png'
 
 
-const MAX_TIME_VALUE = 10
 const CVU = '0000003100090356031917'
 
 
@@ -109,8 +108,7 @@ const HomePage = () => {
             </div>
             <div className="HomePage__Divisor"></div>
             <div className="w-full h-full flex flex-col justify-around items-center">
-              {/* <Title/> */}
-              <span className='text-center text-[24px]'>
+              <span className='HomePage__Title text-center'>
                 Nos encantaría celebrar este día tan especial junto a vos
               </span>
               <Schedule/>
